@@ -1,0 +1,91 @@
+html {
+    font-size: 22px;
+}
+
+body{
+    background-color: #0e1517;
+    color: #ffffff;
+}
+
+a{
+    color: aliceblue
+}
+
+a:visited{
+    color: lightgray
+}
+
+a:hover, a:active{
+    color: #75b0c1
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+}
+  
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+  
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+  
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+  
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+  
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.w3rcontainer{
+    border: 1px solid #cccfdb;
+    border-radius: 2px;
+ } 
+
+.hover-underline-animation {
+   display: inline-block;
+   position: relative;
+   color: #0087ca;
+ }
+ 
+.hover-underline-animation:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #0087ca;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+ }
+ 
+.hover-underline-animation:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+ }
